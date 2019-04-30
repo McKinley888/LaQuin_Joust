@@ -24,6 +24,15 @@ public class Land extends CoreObject
     public void tick()
     {
 
+        x += velX;
+
+
+
+        if(x == 0 || x == Reference.CENTER_X * 2)
+        {
+            setVelX(velX * -1);
+
+        }
     }
 
     @Override

@@ -27,6 +27,7 @@ public class Screen extends Canvas implements Runnable
     public Land land2;
     public Land land3;
 
+
     public static Screen getInstance()
     {
         return screen;
@@ -71,6 +72,7 @@ public class Screen extends Canvas implements Runnable
 
         player.render(g);
         cpu1.render(g);
+
     }
 
 
@@ -101,8 +103,14 @@ public class Screen extends Canvas implements Runnable
         land2.tick();
         land3.tick();
 
+        land1.setVelX(2);
+        land2.setVelX(2);
+        land3.setVelX(-2);
+
         player.tick();
         cpu1.tick();
+
+
 
     }
 
