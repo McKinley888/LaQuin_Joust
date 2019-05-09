@@ -13,4 +13,5 @@ public class Images
     public static BufferedImage background;
     public static BufferedImage bird1;
     public static BufferedImage bird2;
+    public static BufferedImage land;
 }
