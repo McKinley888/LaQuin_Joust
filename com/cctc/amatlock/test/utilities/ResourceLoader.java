@@ -1,5 +1,6 @@
 package com.cctc.amatlock.test.utilities;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class ResourceLoader
@@ -20,6 +21,8 @@ public class ResourceLoader
         // any image isn't found.
         try{
             Images.background = imageLoader.loadImage("background.png");
+            Images.bird1 = imageLoader.loadImage("bird1.png");
+            Images.bird2 = imageLoader.loadImage("bird2.png");
         } catch (IOException e)
         {
             e.printStackTrace();
